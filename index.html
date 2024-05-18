@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAT Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="buttonSound">
+        <source src="data:audio/wav;base64,UklGRhEAABBXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAFAAAAAAEA" type="audio/wav">
+    </audio>
+    <div class="calculator">
+        <h1 class="glow">SAT Calculator</h1>
+        <input type="text" id="display" class="display" disabled>
+        <div class="buttons">
+            
+            <button class="color1" onclick="playSound(); clearDisplay()">C</button>
+            <button class="color2" onclick="playSound(); appendToDisplay('(')">(</button>
+            <button class="color2" onclick="playSound(); appendToDisplay(')')">)</button>
+            <button class="color3" onclick="playSound(); appendToDisplay('%')">%</button>
+            <button class="color4" onclick="playSound(); appendToDisplay('/')">/</button>
+            <button class="color5" onclick="playSound(); appendToDisplay('7')">7</button>
+            <button class="color5" onclick="playSound(); appendToDisplay('8')">8</button>
+            <button class="color5" onclick="playSound(); appendToDisplay('9')">9</button>
+            <button class="color4" onclick="playSound(); appendToDisplay('*')">x</button>
+            <button class="color5" onclick="playSound(); appendToDisplay('4')">4</button>
+            <button class="color5" onclick="playSound(); appendToDisplay('5')">5</button>
+            <button class="color5" onclick="playSound(); appendToDisplay('6')">6</button>
+            <button class="color4" onclick="playSound(); appendToDisplay('-')">-</button>
+            <button class="color5" onclick="playSound(); appendToDisplay('1')">1</button>
+            <button class="color5" onclick="playSound(); appendToDisplay('2')">2</button>
+            <button class="color5" onclick="playSound(); appendToDisplay('3')">3</button>
+            <button class="color4" onclick="playSound(); appendToDisplay('+')">+</button>
+            <button class="color5" onclick="playSound(); appendToDisplay('0')">0</button>
+            <button class="color5" onclick="playSound(); appendToDisplay('.')">.</button>
+            <button class="color6" onclick="playSound(); calculate()">=</button>
+
+            
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.sin(')">sin</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.cos(')">cos</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.tan(')">tan</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.asin(')">asin</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.acos(')">acos</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.atan(')">atan</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.log10(')">log</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.log(')">ln</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.exp(')">e^x</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.sqrt(')">√</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.pow(')">x^y</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.PI')">π</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.E')">e</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('factorial(')">x!</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.pow(10,')">10^x</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.pow(2,')">2^x</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('1/(')">1/x</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.abs(')">|x|</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.log2(')">log2</button>
+            <button class="color7" onclick="playSound(); appendToDisplay('Math.cbrt(')">∛</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
